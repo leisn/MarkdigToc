@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>net5.0;net452;netstandard2.0;netstandard2.1;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <LangVersion>9</LangVersion>
+    <RootNamespace>Leisn.MarkdigToc</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Leisn.MarkdigToc</PackageId>
+    <VersionPrefix>0.1.2</VersionPrefix>
+    <Authors>leisn</Authors>
+    <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
+    <PackageTags>Markdown toc Markdig md md2html</PackageTags>
+    <Description>A extension for Markdig to generate table of content by parse [toc] in markdown content.</Description>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Copyright>Leisn</Copyright>
+    <PackageProjectUrl>https://github.com/leisn/MarkdigToc</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Readme.md" Pack="true" PackagePath="\" />
+    <None Include="..\imgs\icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Markdig" Version="0.26.0" />
+  </ItemGroup>
+
+</Project>
