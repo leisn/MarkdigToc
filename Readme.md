@@ -1,6 +1,6 @@
 # MarkdigToc  [![NuGet](https://img.shields.io/nuget/v/Leisn.MarkdigToc)](https://www.nuget.org/packages/Leisn.MarkdigToc/)
 
-MarkdigToc is a extension for Markdig to generate table of content by parse [toc] in markdown content. 
+MarkdigToc is a extension for [Markdig](https://github.com/xoofx/markdig) to generate table of content by parse [toc] in markdown content. 
 
 > Currently just for render to html.
 
