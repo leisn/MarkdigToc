@@ -65,9 +65,6 @@ namespace Leisn.MarkdigToc
                     renderer.Write($"</{Options.ContainerTag}>");
             }
             renderer.EnsureLine();
-
-            //once randerered clear the tree
-            Options.Headings.Clear();
         }
 
         void WriteTitle(HtmlRenderer renderer, TocBlock obj)

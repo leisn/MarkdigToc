@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
@@ -10,15 +10,19 @@
 
   <PropertyGroup>
     <PackageId>Leisn.MarkdigToc</PackageId>
-    <VersionPrefix>0.1.2</VersionPrefix>
+    <Version>0.1.3</Version>
     <Authors>leisn</Authors>
     <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
     <PackageTags>Markdown toc Markdig md md2html</PackageTags>
-    <Description>A extension for Markdig to generate table of content by parse [toc] in markdown content.</Description>
+    <Description>A extension for Markdig to generate table of content by parse [toc] in markdown document.</Description>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
-    <Copyright>Leisn</Copyright>
+    <Copyright>Copyright (c) Leisn 2021</Copyright>
     <PackageProjectUrl>https://github.com/leisn/MarkdigToc</PackageProjectUrl>
+    <PackageReleaseNotes> v0.1.3: 
+      1. Fix parse two markdown document use same `MarkdownPipelineBuilder` , one document without `[toc]` and the other one has, the generated toc block will contains both.
+      2. After fixed, markdown document can has more than one `[toc]` , and all of these can be rendered, though it's useless.
+    </PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">

@@ -1,6 +1,6 @@
 # MarkdigToc  [![NuGet](https://img.shields.io/nuget/v/Leisn.MarkdigToc)](https://www.nuget.org/packages/Leisn.MarkdigToc/)
 
-MarkdigToc is a extension for [Markdig](https://github.com/xoofx/markdig) to generate table of content by parse [toc] in markdown content. 
+MarkdigToc is a extension for [Markdig](https://github.com/xoofx/markdig) to generate table of content by parse [toc] in markdown document. 
 
 > Currently just for render to html.
 
@@ -123,11 +123,11 @@ Code copied from `AutoIdentifierExtension`, then added some code and options.
 
 #### TOC Title
 
-> NOTICE: I also parse toc title and use it's attributes from markdown content , but that is not a regular *syntax*, you should know that.
+> NOTICE: I also parse toc title and use it's attributes from markdown document , but that is not a regular *syntax*, you should know that.
 
 * `OverrideTitle`: `string? : default null`
 
-  Override toc title , ignore defined in markdown content.
+  Override toc title , ignore defined in markdown document.
 
 * `TitleTag`: `string : default p`
 
@@ -159,7 +159,7 @@ Code copied from `AutoIdentifierExtension`, then added some code and options.
 
 ## Others
 
-Markdown content:
+Markdown document:
 
 ```markdown
 [TOC]       

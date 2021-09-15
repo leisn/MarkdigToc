@@ -63,7 +63,7 @@ namespace Leisn.MarkdigToc
         public string TocTag { get; set; } = "nav";
         /// <summary>
         /// Class names for toc element.<br/>
-        /// Notice: If also defined in markdown content , this will be auto add without repeating.<br/>
+        /// Notice: If also defined in markdown document , this will be auto add without repeating.<br/>
         /// e.g.<br/>
         /// <code>[toc] {.tocClass1.tocClass2}</code>
         /// <code>TocClass="toc tocClass1";</code>
@@ -73,7 +73,7 @@ namespace Leisn.MarkdigToc
         public string? TocClass { get; set; }
         /// <summary>
         /// Id for toc element.<br/>
-        /// Notice: If defined in markdown content , this will be <strong>ignored</strong>.<br/>
+        /// Notice: If defined in markdown document , this will be <strong>ignored</strong>.<br/>
         /// e.g.<br/>
         /// <code>[toc] {#tocId}</code>
         /// <code>TocId="tocId";</code>
@@ -124,6 +124,7 @@ namespace Leisn.MarkdigToc
         #endregion
 
         internal void AddHeading(HeadingInfo info)
-             => Headings.Append(HeadingInfos.FromHeading(info));
+            => Headings.Append(HeadingInfos.FromHeading(info));
+
     }
 }

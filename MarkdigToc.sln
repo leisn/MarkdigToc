@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{25A1C149
 		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		changelog.md = changelog.md
 		global.json = global.json
 		License = License
 		Readme.md = Readme.md
