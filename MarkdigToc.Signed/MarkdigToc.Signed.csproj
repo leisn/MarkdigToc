@@ -26,7 +26,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <SignAssembly>True</SignAssembly>
     <DelaySign>False</DelaySign>
-    <AssemblyOriginatorKeyFile>C:\Projects\MarkdigToc\MarkdigToc.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\MarkdigToc.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
