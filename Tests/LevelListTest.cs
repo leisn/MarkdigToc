@@ -1,9 +1,7 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 using Leisn.MarkdigToc.Helpers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Diagnostics;
 using System.Text;
-using Markdig.Helpers;
 
 namespace Tests
 {
@@ -118,7 +116,7 @@ namespace Tests
         }
 
         [TestMethod]
-        public void จั_Test()
+        public void ToFormattedString_Five_to_One_Test()
         {
             root.Clear();
             Assert.IsTrue(root.Count == 0);
@@ -148,7 +146,7 @@ namespace Tests
         }
 
         [TestMethod]
-        public void ฅี_Test()
+        public void ToFormattedString_One_To_Five_Test()
         {
             root.Clear();
             Assert.IsTrue(root.Count == 0);

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31515.178
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{25A1C149-BB57-4A05-B0A7-98BC88264952}"
 	ProjectSection(SolutionItems) = preProject
@@ -18,6 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarkdigToc", "src\MarkdigTo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{736A15B3-A710-4391-9E20-2189A32A2721}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarkdigToc.Signed", "MarkdigToc.Signed\MarkdigToc.Signed.csproj", "{AAD5BA1B-134A-433A-B25E-F7BA799F4939}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{736A15B3-A710-4391-9E20-2189A32A2721}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{736A15B3-A710-4391-9E20-2189A32A2721}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{736A15B3-A710-4391-9E20-2189A32A2721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD5BA1B-134A-433A-B25E-F7BA799F4939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD5BA1B-134A-433A-B25E-F7BA799F4939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD5BA1B-134A-433A-B25E-F7BA799F4939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD5BA1B-134A-433A-B25E-F7BA799F4939}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

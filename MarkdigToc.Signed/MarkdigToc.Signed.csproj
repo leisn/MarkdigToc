@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>net5.0;net452;netstandard2.0;netstandard2.1;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <LangVersion>9</LangVersion>
+    <RootNamespace>Leisn.MarkdigToc.Signed</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Leisn.MarkdigToc.Signed</PackageId>
+    <Version>0.1.3</Version>
+    <Authors>leisn</Authors>
+    <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
+    <PackageTags>Markdown toc Markdig md md2html</PackageTags>
+    <Description>A extension for Markdig to generate table of content by parse [toc] in markdown document.</Description>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Copyright>Copyright (c) Leisn 2021</Copyright>
+    <PackageProjectUrl>https://github.com/leisn/MarkdigToc</PackageProjectUrl>
+    <PackageReleaseNotes> v0.1.3: 
+      1. Fix parse two markdown document use same `MarkdownPipelineBuilder` , one document without `[toc]` and the other one has, the generated toc block will contains both.
+      2. After fixed, markdown document can has more than one `[toc]` , and all of these can be rendered, though it's useless.
+    </PackageReleaseNotes>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <SignAssembly>True</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyFile>..\MarkdigToc.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\src\CustomAutoIdExtension.cs" Link="CustomAutoIdExtension.cs" />
+    <Compile Include="..\src\CustomAutoIdOptions.cs" Link="CustomAutoIdOptions.cs" />
+    <Compile Include="..\src\Helpers\HeadingInfos.cs" Link="Helpers\HeadingInfos.cs" />
+    <Compile Include="..\src\Helpers\LevelList.cs" Link="Helpers\LevelList.cs" />
+    <Compile Include="..\src\HtmlTocRenderer.cs" Link="HtmlTocRenderer.cs" />
+    <Compile Include="..\src\TocBlock.cs" Link="TocBlock.cs" />
+    <Compile Include="..\src\TocBlockParser.cs" Link="TocBlockParser.cs" />
+    <Compile Include="..\src\TocExtension.cs" Link="TocExtension.cs" />
+    <Compile Include="..\src\TocExtensions.cs" Link="TocExtensions.cs" />
+    <Compile Include="..\src\TocOptions.cs" Link="TocOptions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Readme.md" Pack="true" PackagePath="\" />
+    <None Include="..\imgs\icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Markdig.Signed" Version="0.26.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
+</Project>

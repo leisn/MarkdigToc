@@ -1,13 +1,7 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-using Leisn.MarkdigToc.Helpers;
-using System.Diagnostics;
-using System.Text;
+﻿using Markdig;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Markdig.Helpers;
-using HtmlAgilityPack;
 using System.IO;
-using Markdig;
 
 namespace Tests
 {
