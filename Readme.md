@@ -1,4 +1,4 @@
-# MarkdigToc  [![NuGet](https://img.shields.io/nuget/v/Leisn.MarkdigToc)](https://www.nuget.org/packages/Leisn.MarkdigToc/)
+# MarkdigToc  [![NuGet](https://img.shields.io/nuget/v/Leisn.MarkdigToc)](https://www.nuget.org/packages/Leisn.MarkdigToc/) [![NuGet](https://img.shields.io/nuget/v/Leisn.MarkdigToc.Signed)](https://www.nuget.org/packages/Leisn.MarkdigToc.Signed/)
 
 MarkdigToc is a extension for [Markdig](https://github.com/xoofx/markdig) to generate table of content by parse [toc] in markdown document. 
 
@@ -207,3 +207,5 @@ Markdown document:
                 ■ t5
 ```
 
+## Thanks
+Thanks Atrejoe for signed version
